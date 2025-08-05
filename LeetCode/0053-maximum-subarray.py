@@ -55,23 +55,12 @@ def improved_max_subarray_sum(nums):
 
 teste1 = [1, 2, 3]                      # soma máxima: 6
 teste2 = [-1, -2, -3]                   # soma máxima: -1
-teste3 = [5]                            # soma máxima: 5
-teste4 = [0, 0, 0]                      # soma máxima: 0
-teste5 = [1, -2, 3, 4, -1, 2]           # soma máxima: 8
-teste6 = [-2, 1, -3, 4, -1, 2, 1, -5, 4]  # soma máxima: 6
-teste7 = [-2, -3, 4, -1, -2, 1, 5, -3]    # soma máxima: 7
-teste8 = [-10, 100, -200, 300]         # soma máxima: 300
-teste9 = [100, -1, -1, -1, -1]         # soma máxima: 100
-teste10 = [-5, -1, -8, -9]             # soma máxima: -1
-teste11 = [0, -3, 5, -2, 0, 4]         # soma máxima: 7
-teste12 = [-2, 0, -1, 0, -3]           # soma máxima: 0
 
-print(brute_force_max_subrarray_sum(teste8))
+
+print(brute_force_max_subrarray_sum(teste1))
 print(brute_force_max_subrarray_sum(teste2))
-print(brute_force_max_subrarray_sum(teste3))
 
 print("-------")
 
-print(improved_max_subarray_sum(teste8))
+print(improved_max_subarray_sum(teste1))
 print(improved_max_subarray_sum(teste2))
-print(improved_max_subarray_sum(teste3))

@@ -11,12 +11,12 @@
 # 2 parameters
 # return true or false
 
-# FORÇA BRUTA O(n^2)
 
 array1 = ['a', 'b', 'c', 'd']
 
 array2 = ['canela', 'y', 'c', 'i', '9']
 
+# FORÇA BRUTA O(n^2)
 
 def has_common_items(array1, array2):
 

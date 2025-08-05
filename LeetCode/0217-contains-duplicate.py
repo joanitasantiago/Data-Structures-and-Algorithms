@@ -41,6 +41,7 @@ def contains_duplicate(nums):
                 return True
     return False
 
+
 def contains_duplicate_improved(nums):
     
     seen = set()
