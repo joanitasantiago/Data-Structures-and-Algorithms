@@ -52,6 +52,19 @@ def contains_duplicate_improved(nums):
         seen.add(num)
     return False
 
-teste =  [1,2,3,4]
 
-print(contains_duplicate_improved(teste))
+def shorter_contains_duplicate(nums):
+
+    return len(nums) != len(set(nums))
+
+# set(nums) elimina duplicatas automaticamente pq um set é uma coleção de elementos únicos.
+
+# se o tamanho de nums for diferente de set(nums) é pq tem duplicatas
+
+# isso funciona pq o objetivo do problema é apenas saber se há ou não elementos duplicados com output de true ou false.
+
+
+
+teste =  [1,2,2,3,4]
+
+print(shorter_contains_duplicate(teste))
