@@ -51,8 +51,6 @@ def group_anagrams(input):
     
     return list(anagrams_dict.values()) #retorna uma lista apenas com os valores do dicionário
 
-print(group_anagrams(teste))
-
 #Tem uma solução mais eficiente:
 
 # objetivo: pra cada palavra:
@@ -62,3 +60,21 @@ print(group_anagrams(teste))
 # 4.retornar todos os grupos
 # ver dps..
 
+from collections import defaultdict
+
+def group_anagrams2(input):
+    anagrams_dict = defaultdict(list)
+
+    for word in input:
+        count = [0] * 26  # uma posição pra cada letra de a-z
+
+        for letter in word:
+            count[ord(letter) - ord('a')] += 1  # transforma letra em índice
+
+        key = tuple(count)  # tupla imutável = chave válida
+
+        anagrams_dict[key].append(word)  # agrupa os anagramas
+
+    return list(anagrams_dict.values())
+
+print(group_anagrams2(teste))
