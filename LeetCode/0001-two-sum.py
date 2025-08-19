@@ -17,7 +17,7 @@
 
 #solução 1 - não é a mais eficiente
 #input= [0 1 2 3 4 5 6  7  8 9]
-input = [8,0,0,2,4,8,6,11,15,7]
+input = [1,8,0,0,2,4,8,6,11,15,7]
 target = 9
 
 class solution1:
@@ -38,6 +38,7 @@ class solution2:
             if diff in indexmap:
                 return [indexmap[diff], i]
             indexmap[num] = i
+
 
 
 sol = solution2() #precisa criar um objeto da classe antes de chamar o método
